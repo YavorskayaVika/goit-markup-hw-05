@@ -97,7 +97,7 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title-color);
-  transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .link:hover,
 .link:focus {
@@ -323,8 +323,10 @@ ol {
     height: 40px;
     background-color: var(--accent);
     border-radius: 50%;
-    transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+   
   }
+
   .social-link:hover,
   .social-link:focus{
     background-color: #404bbf; 
@@ -442,6 +444,7 @@ height: 80px;
   display: flex; 
   align-items: center; 
   justify-content: center;
+  background-color:250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-foot:hover,
@@ -458,15 +461,13 @@ height: 80px;
 
  .galery-link{
   display: block;
-   box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .galery-link:hover,
  .galery-link:focus{
-  box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-  0px 2px 1px rgba(46, 47, 66, 0.08);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    
  }
 .all-images {
   font-weight: 500;
@@ -538,6 +539,7 @@ height: 80px;
 
 .color-tel {
   color: var(--title-color);
+  transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 }
 .list {
@@ -614,19 +616,17 @@ height: 80px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
   border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-
+  
 }
 .backdrop.is-hidden{
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
-.modal-btn:hover
+.modal-btn:hover,
 .modal-btn:focus{
   background-color: #404bbf; 
   border: none;
-
-
 }
 .modal-icon{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -666,11 +666,11 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.item-galery:hover  
-.overlay-text 
-.item-galery:focus
-.overlay-text {
-  transform: translateY(0);
+.item-galery:hover .overlay-text,
+.item-galery:focus .overlay-text { 
+  transform: translateY(0%);
 }
+
+
 
 
