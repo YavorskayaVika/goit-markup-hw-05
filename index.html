@@ -37,10 +37,12 @@
           >
           <ul class="list site-nav">
             <li class="navigation">
-              <a class="link my-color" href="./index.html">Studio</a>
+              <a class="link my-color current" href="./index.html">Studio
+            
+              </a>
             </li>
             <li class="navigation">
-              <a class="link my-color" href="./portfolio.html">Portfolio</a>
+              <a class="link my-color " href="./portfolio.html">Portfolio</a>
             </li>
             <li class="navigation">
               <a class="link my-color" href="">Contacts</a>
@@ -68,19 +70,9 @@
             Effective Solutions <br >
             for Your Business
           </h1>
-          <button class="button button-seting">Order Service</button>
+          <button class="button button-seting" data-modal-open>Order Service</button>
         </div>
-        <!-- Modal window -->
-        <div class="backdrop"></div>
-        <div class="modal">
-       <button class="modal-btn" type="button" aria-label="close modal window button" >  
-        <svg class="modal-icon" width="25" height="25">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-       </button>
-
-        </div>
-        <script src=""  >   </script>
+       
       </section>
 
       <!-- Main goals -->
@@ -498,7 +490,7 @@
       <div class=" footer-box  container">
         <div class="footer-advantages">
           <a class="footer-item logo link" href="/"
-            >WEB<span class="logo-foot">Studio</span></a>
+            >WEB<span class="logo-footteam-item-box">Studio</span></a>
           <p class="footer-info">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -553,5 +545,17 @@
        
       </div>
     </footer>
+     <!-- Modal window -->
+     <div class="backdrop is-hidden" data-modal >
+     <div class="modal">
+    <button class="modal-btn" type="button" aria-label="close modal window button" data-modal-close  >  
+     <svg class="modal-icon" width="8" height="8">
+       <use href="./images/icons.svg#icon-close"></use>
+     </svg>
+    </button>
+
+     </div>
+    </div>
+     <script src="./js/modal.js"  >   </script>
   </body>
 </html>
